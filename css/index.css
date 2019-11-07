@@ -179,16 +179,17 @@ header h1 {
   font-size: 3.5rem;
 }
 .top-container {
-  margin: 5% 31% 5% 0;
+  margin: 0% 32% 5% -2%;
   padding: 0 1% 1% 2%;
 }
 .top-container .self-photo img {
   background-image: url("images/myself.jpeg");
   width: 30%;
-  padding-top: 6%;
+  padding-top: 1%;
   padding-bottom: 2%;
 }
 .top-container h1 {
+  padding-top: 5%;
   font-size: 4rem;
 }
 .top-container h3 {
@@ -200,7 +201,7 @@ header h1 {
   margin: 2%;
   padding: 0 1% 0 1%;
   background-color: gray;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 .middle-container {
   display: flex;
@@ -226,17 +227,20 @@ header h1 {
 .bottom-container {
   display: flex;
   flex-direction: column;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
   padding: 2%;
 }
 .bottom-container h2 {
+  font-size: 2.5rem;
   border-bottom: 2px solid black;
+  background-color: black;
+  color: gray;
+  padding-top: 2%;
   padding-bottom: 2%;
+  padding-left: 2%;
 }
 .bottom-container table {
   border-bottom: 2px solid black;
+  background-color: gray;
 }
 .bottom-container table th {
   padding: 2%;
