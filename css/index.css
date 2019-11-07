@@ -1,1 +1,369 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Jomolhari';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Jomolhari Regular'), local('Jomolhari-Regular'), url(https://fonts.gstatic.com/s/jomolhari/v1/EvONzA1M1Iw_CBd2hsQyEFgd.ttf) format('truetype');
+}
+.table-header {
+  padding: 2%;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+.table-row {
+  justify-content: center;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+.table-cell {
+  padding: 2%;
+  text-align: center;
+  border: 2px solid black;
+}
+.middle-container-styling h2 {
+  padding-bottom: 2%;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+}
+.middle-container-styling p {
+  padding-top: 2%;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  background-image: url('../images/ocean.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow-x: hidden;
+  font-family: 'Jomolhari', monospace;
+}
+.container {
+  display: flex;
+  font-size: 1.6rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1% 0 1%;
+  min-width: 800px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: gray;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-right: 5%;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: flex-start;
+    justify-content: space-around;
+  }
+}
+header nav a {
+  color: lightgrey;
+  text-decoration: none;
+  padding: 2%;
+}
+header nav a:hover {
+  color: black;
+}
+header h1 {
+  color: black;
+  padding-left: 5%;
+  padding-right: 1%;
+  font-size: 3.5rem;
+}
+@media (max-width: 500px) {
+  header h1 {
+    padding-right: 39%;
+    padding-top: 1%;
+  }
+}
+.top-container {
+  margin: 0% 32% 5% -2%;
+  padding: 0 1% 1% 2%;
+}
+.top-container .self-photo img {
+  background-image: url("images/myself.jpeg");
+  width: 30%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+.top-container h1 {
+  padding-top: 5%;
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .top-container h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 2.4rem;
+  }
+}
+.top-container h3 {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .top-container h3 {
+    display: flex;
+    font-size: 1.4rem;
+  }
+}
+.top-container button {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  padding: 0 1% 0 1%;
+  background-color: gray;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .top-container button {
+    margin: 1%;
+    font-size: 1rem;
+  }
+}
+.middle-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6%;
+}
+@media (max-width: 500px) {
+  .middle-container {
+    flex-direction: column;
+    margin-left: 3%;
+  }
+}
+.middle-container .about-me-container {
+  width: 50%;
+  margin-right: 2%;
+  padding: 3%;
+  background-color: gray;
+}
+.middle-container .about-me-container h2 {
+  padding-bottom: 2%;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+}
+.middle-container .about-me-container p {
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  .middle-container .about-me-container {
+    margin-bottom: 2% ;
+    margin-left: 3%;
+  }
+}
+.middle-container .good-at-container {
+  width: 50%;
+  margin-left: 2%;
+  padding: 3%;
+  background-color: gray;
+}
+.middle-container .good-at-container h2 {
+  padding-bottom: 2%;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+}
+.middle-container .good-at-container p {
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  .middle-container .good-at-container {
+    margin-left: 3%;
+  }
+}
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .bottom-container {
+    padding: 0;
+    margin: 0;
+    width: 62%;
+  }
+}
+.bottom-container h2 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid black;
+  background-color: #37494E;
+  color: gray;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+@media (max-width: 500px) {
+  .bottom-container h2 {
+    display: flex;
+  }
+}
+.bottom-container table {
+  border-bottom: 2px solid black;
+  background-color: gray;
+}
+.bottom-container table th {
+  padding: 2%;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+.bottom-container table tr {
+  justify-content: center;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+@media (max-width: 500px) {
+  .bottom-container table tr {
+    font-size: 1.3rem;
+  }
+}
+.bottom-container table td {
+  padding: 2%;
+  text-align: center;
+  border: 2px solid black;
+}
