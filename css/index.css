@@ -155,6 +155,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  overflow-x: hidden;
 }
 .container {
   display: flex;
@@ -289,7 +290,6 @@ header h1 {
   justify-content: center;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-  display: flex;
 }
 .bottom-container table td {
   padding: 2%;
