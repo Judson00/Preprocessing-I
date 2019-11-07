@@ -100,8 +100,10 @@ html, body {
 
 body{
 	background-image: url('../images/ocean.jpg');
-	background-size: cover;             background-repeat: no-repeat;
+	background-size: cover;             
+	background-repeat: no-repeat;
 	background-position: center center;
+	background-attachment: fixed;//Look this up
 	overflow-x: hidden; 
 	font-family: @body-font;
 }
@@ -278,7 +280,8 @@ header{
 		}
 	}
 
-	table{
+	.table-header{
+		width: 100%;
 		border-bottom: 2px solid black;
 		background-color: @accent-color;
 		
