@@ -50,6 +50,9 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
+// starts here
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
+
 .table-header {
 	padding:	2%;
 	border-bottom: 2px solid black;
@@ -67,6 +70,20 @@ table {
 	text-align: center;
 	border: 2px solid black;
 }
+
+.middle-container-styling{
+	h2{
+		padding-bottom: 2%;
+		font-size: 2rem;
+		border-bottom: 1px solid black;
+	}
+
+	p{
+		padding-top: 2%;
+	}
+}
+
+@body-font: 'Jomolhari', monospace;
 
 @accent-color: gray;
 @main-color: lightgrey;
@@ -86,6 +103,7 @@ body{
 	background-size: cover;             background-repeat: no-repeat;
 	background-position: center center;
 	overflow-x: hidden; 
+	font-family: @body-font;
 }
 
 //container starts
@@ -206,12 +224,12 @@ header{
 		}
 
 	.about-me-container{
-		display: flex;
-		flex-wrap: wrap;
 		width: 50%;
 		margin-right: 2%;
 		padding: 3%;
 		background-color: gray;
+
+		.middle-container-styling();
 
 		@media(max-width:500px){
 			margin-bottom:2% ;
@@ -220,12 +238,12 @@ header{
 	}//about me container ends
 
 	.good-at-container{
-		display: flex;
-		flex-wrap: wrap;
 		width: 50%;
 		margin-left: 2%;
 		padding: 3%;
 		background-color: gray;
+
+		.middle-container-styling();
 
 		@media(max-width:500px){
 			margin-left: 3%;
@@ -241,7 +259,9 @@ header{
 	padding: 2%;
 
 		@media(max-width: 500px){
-			flex-direction: row;
+			padding: 0;
+			margin: 0;
+			width: 62%;
 		}
 	
 	h2{
@@ -254,8 +274,7 @@ header{
 		padding-left: 2%;
 
 			@media(max-width: 500px){
-				padding-top: 6%;
-				padding-left: 4%;
+				display: flex;
 		}
 	}
 
@@ -269,6 +288,10 @@ header{
 
 		tr{
 		.table-row();
+
+		@media(max-width:500px){
+			font-size: 1.3rem;
+		}
 	}
 
 		td{

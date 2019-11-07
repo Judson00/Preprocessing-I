@@ -127,6 +127,13 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Jomolhari';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Jomolhari Regular'), local('Jomolhari-Regular'), url(https://fonts.gstatic.com/s/jomolhari/v1/EvONzA1M1Iw_CBd2hsQyEFgd.ttf) format('truetype');
+}
 .table-header {
   padding: 2%;
   border-bottom: 2px solid black;
@@ -142,6 +149,14 @@ table {
   text-align: center;
   border: 2px solid black;
 }
+.middle-container-styling h2 {
+  padding-bottom: 2%;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+}
+.middle-container-styling p {
+  padding-top: 2%;
+}
 * {
   box-sizing: border-box;
 }
@@ -156,6 +171,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   overflow-x: hidden;
+  font-family: 'Jomolhari', monospace;
 }
 .container {
   display: flex;
@@ -263,12 +279,18 @@ header h1 {
   }
 }
 .middle-container .about-me-container {
-  display: flex;
-  flex-wrap: wrap;
   width: 50%;
   margin-right: 2%;
   padding: 3%;
   background-color: gray;
+}
+.middle-container .about-me-container h2 {
+  padding-bottom: 2%;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+}
+.middle-container .about-me-container p {
+  padding-top: 2%;
 }
 @media (max-width: 500px) {
   .middle-container .about-me-container {
@@ -277,12 +299,18 @@ header h1 {
   }
 }
 .middle-container .good-at-container {
-  display: flex;
-  flex-wrap: wrap;
   width: 50%;
   margin-left: 2%;
   padding: 3%;
   background-color: gray;
+}
+.middle-container .good-at-container h2 {
+  padding-bottom: 2%;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+}
+.middle-container .good-at-container p {
+  padding-top: 2%;
 }
 @media (max-width: 500px) {
   .middle-container .good-at-container {
@@ -296,7 +324,9 @@ header h1 {
 }
 @media (max-width: 500px) {
   .bottom-container {
-    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width: 62%;
   }
 }
 .bottom-container h2 {
@@ -310,8 +340,7 @@ header h1 {
 }
 @media (max-width: 500px) {
   .bottom-container h2 {
-    padding-top: 6%;
-    padding-left: 4%;
+    display: flex;
   }
 }
 .bottom-container table {
@@ -327,6 +356,11 @@ header h1 {
   justify-content: center;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
+}
+@media (max-width: 500px) {
+  .bottom-container table tr {
+    font-size: 1.3rem;
+  }
 }
 .bottom-container table td {
   padding: 2%;
