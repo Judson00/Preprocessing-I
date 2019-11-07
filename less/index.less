@@ -50,7 +50,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
-@accent-color: aqua;
+@accent-color: gray;
 @main-color: lightgrey;
 
 * {
@@ -63,6 +63,12 @@ html, body {
 		
 }//html, body ends
 
+body{
+	background-image: url('../images/ocean.jpg');
+	background-size: cover;             background-repeat: no-repeat;
+  background-position: center center;
+}
+
 //container starts
 .container{
 	display: flex;
@@ -71,7 +77,8 @@ html, body {
 	justify-content: center;
 	padding: 0 1% 0 1%;
 	min-width: 800px;
-	background-color: @main-color;
+	//background-color: @main-color;
+	
 }//container ends
 
 //header starts
@@ -92,7 +99,7 @@ header{
 	}//nav ends
 
 	nav a{
-		color: lightseagreen;
+		color: lightgrey;
 		text-decoration: none;
 		padding: 2%;
 	}//nav a ends
@@ -102,7 +109,7 @@ header{
 	}
 
 	h1{
-		color: blue;
+		color: black;
 		padding-left: 5%;
 		padding-right: 1%;
 		font-size: 3.5rem;
@@ -111,7 +118,7 @@ header{
 
 // top container starts
 .top-container{
-	background-color: gray;
+	// background-image: url('images/ocean.jpg');
 	margin: 5% 31% 5% 0;
 	padding: 0 1% 1% 2%;
 
@@ -169,6 +176,40 @@ header{
 
 //bottom container starts
 .bottom-container{
+	display: flex;
+	flex-direction: column;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	padding: 2%;
+	
+	h2{
+		border-bottom: 2px solid black;
+		padding-bottom: 2%;
+	}
+
+	table{
+		border-bottom: 2px solid black;
+
+		th{
+			padding:	2%;
+			border-bottom: 2px solid black;
+			border-right: 2px solid black;
+		}
+
+		tr{
+		justify-content: center;
+		border-bottom: 2px solid black;
+		border-left: 2px solid black;
+	}
+
+		td{
+			padding: 2%;
+			text-align: center;
+			border: 2px solid black;
+		}
+
+	}
 
 }
 

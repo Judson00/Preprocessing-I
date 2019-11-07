@@ -135,6 +135,12 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+body {
+  background-image: url('../images/ocean.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 .container {
   display: flex;
   font-size: 1.6rem;
@@ -142,7 +148,6 @@ body {
   justify-content: center;
   padding: 0 1% 0 1%;
   min-width: 800px;
-  background-color: lightgrey;
 }
 header {
   display: flex;
@@ -150,7 +155,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  background-color: aqua;
+  background-color: gray;
 }
 header nav {
   display: flex;
@@ -160,7 +165,7 @@ header nav {
   font-size: 2rem;
 }
 header nav a {
-  color: lightseagreen;
+  color: lightgrey;
   text-decoration: none;
   padding: 2%;
 }
@@ -168,13 +173,12 @@ header nav a:hover {
   color: black;
 }
 header h1 {
-  color: blue;
+  color: black;
   padding-left: 5%;
   padding-right: 1%;
   font-size: 3.5rem;
 }
 .top-container {
-  background-color: gray;
   margin: 5% 31% 5% 0;
   padding: 0 1% 1% 2%;
 }
@@ -195,7 +199,7 @@ header h1 {
   justify-content: center;
   margin: 2%;
   padding: 0 1% 0 1%;
-  background-color: aqua;
+  background-color: gray;
   font-size: 1.8rem;
 }
 .middle-container {
@@ -218,4 +222,34 @@ header h1 {
   margin-left: 2%;
   padding: 3%;
   background-color: gray;
+}
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  padding: 2%;
+}
+.bottom-container h2 {
+  border-bottom: 2px solid black;
+  padding-bottom: 2%;
+}
+.bottom-container table {
+  border-bottom: 2px solid black;
+}
+.bottom-container table th {
+  padding: 2%;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+.bottom-container table tr {
+  justify-content: center;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+.bottom-container table td {
+  padding: 2%;
+  text-align: center;
+  border: 2px solid black;
 }
