@@ -220,8 +220,22 @@ header h1 {
   padding-top: 5%;
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  .top-container h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 2.4rem;
+  }
+}
 .top-container h3 {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .top-container h3 {
+    display: flex;
+    font-size: 1.4rem;
+  }
 }
 .top-container button {
   display: flex;
@@ -231,10 +245,22 @@ header h1 {
   background-color: gray;
   font-size: 1.2rem;
 }
+@media (max-width: 500px) {
+  .top-container button {
+    margin: 1%;
+    font-size: 1rem;
+  }
+}
 .middle-container {
   display: flex;
   flex-direction: row;
   margin-bottom: 6%;
+}
+@media (max-width: 500px) {
+  .middle-container {
+    flex-direction: column;
+    margin-left: 3%;
+  }
 }
 .middle-container .about-me-container {
   display: flex;
@@ -244,6 +270,12 @@ header h1 {
   padding: 3%;
   background-color: gray;
 }
+@media (max-width: 500px) {
+  .middle-container .about-me-container {
+    margin-bottom: 2% ;
+    margin-left: 3%;
+  }
+}
 .middle-container .good-at-container {
   display: flex;
   flex-wrap: wrap;
@@ -251,6 +283,11 @@ header h1 {
   margin-left: 2%;
   padding: 3%;
   background-color: gray;
+}
+@media (max-width: 500px) {
+  .middle-container .good-at-container {
+    margin-left: 3%;
+  }
 }
 .bottom-container {
   display: flex;

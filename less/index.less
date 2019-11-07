@@ -161,10 +161,22 @@ header{
 	h1{
 		padding-top: 5%;
 		font-size: 4rem;
+
+		@media(max-width: 500px){
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			font-size: 2.4rem;
+		}
 	}//end of h1 image
 
 	h3{
 		font-size: 2rem;
+
+		@media(max-width:500px){
+			display: flex;
+			font-size: 1.4rem;
+		}
 	}//h3 ends here
 
 	button{
@@ -174,6 +186,11 @@ header{
 		padding: 0 1% 0 1%;
 		background-color: @accent-color;
 		font-size: 1.2rem;
+
+		@media(max-width:500px){
+			margin: 1%;
+			font-size: 1rem;
+		}
 	}//end of button
 
 }//top-container ends
@@ -183,6 +200,10 @@ header{
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 6%;
+		@media(max-width:500px){
+			flex-direction: column;
+			margin-left: 3%;
+		}
 
 	.about-me-container{
 		display: flex;
@@ -191,6 +212,11 @@ header{
 		margin-right: 2%;
 		padding: 3%;
 		background-color: gray;
+
+		@media(max-width:500px){
+			margin-bottom:2% ;
+			margin-left: 3%;
+		}
 	}//about me container ends
 
 	.good-at-container{
@@ -200,6 +226,10 @@ header{
 		margin-left: 2%;
 		padding: 3%;
 		background-color: gray;
+
+		@media(max-width:500px){
+			margin-left: 3%;
+		}
 	}//good at container ends
 
 }//Middle container ends
